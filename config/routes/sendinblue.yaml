@@ -1,0 +1,3 @@
+synolia_sendinblue:
+  resource: "@SynoliaSyliusSendinBluePlugin/Resources/config/admin_routing.yaml"
+  prefix: /admin

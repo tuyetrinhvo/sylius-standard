@@ -1,0 +1,12 @@
+imports:
+    - { resource: "../vendor/sylius/sylius/src/Sylius/Behat/Resources/config/services.xml" }
+    - { resource: "../vendor/payplug/sylius-payplug-plugin/src/Resources/config/services.xml" }
+    - { resource: "../vendor/payplug/sylius-payplug-plugin/tests/Behat/Resources/services.xml" }
+    - { resource: "../vendor/payplug/sylius-payplug-plugin/tests/Application/config/packages/test/payplug.yaml" }
+    - { resource: "../vendor/sylius/refund-plugin/src/Resources/config/services.xml" }
+    - { resource: "../vendor/sylius/refund-plugin/tests/Behat/Resources/services.xml" }
+parameters:
+    sylius_refund.supported_gateways:
+        - payplug
+        - payplug_oney
+        - cash_on_delivery

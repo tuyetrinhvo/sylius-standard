@@ -1,0 +1,15 @@
+twig:
+    paths: ['%kernel.project_dir%/templates']
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
+    form_themes: [
+            'form/form_gateway_config_row.html.twig'
+    ]
+
+services:
+    _defaults:
+        public: false
+        autowire: true
+        autoconfigure: true
+
+    Twig\Extra\Intl\IntlExtension: ~
